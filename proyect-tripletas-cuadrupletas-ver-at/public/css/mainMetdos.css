@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.method-TyC{
+    max-width: 90%;
+    
+    overflow: hidden;
+    text-align: center;
+    margin-top: 2.5%;
+    display: flex;    
+    flex-wrap:initial;
+    flex: content;
+}
+
+.method-description{
+    max-width: 40%;
+    margin-left: 3%;
+    text-align: center;
+    justify-content: left;
+ 
+    width: 14cm;
+    height: 10cm;
+    background:rgba(4, 0, 255, 0.205) ;
+}
+
+.method-date{
+    margin-left: 4%;
+    justify-content: right;
+    max-width: 60%;
+    width: 20cm;
+    height: 3cm;
+    background:rgba(4, 0, 255, 0.205) ;
+}
+
+.input-method{
+    margin-top: 0.5cm;
+    width: 8cm;
+    border-radius: 11%;
+}
+
+.button-method{
+    margin-top: 0.5cm;
+    border-radius: 10%;
+    width: 5cm;
+    border-color: deepskyblue;
+    border-block-start-color: rgba(38, 0, 255, 0.459);
+    border-block-start-style: ridge;
+}
+
+.method-work{
+    background-color: deepskyblue;
+    /*height: 30cm;    
+    width: 20cm; */
+    margin-top: 1cm;
+}

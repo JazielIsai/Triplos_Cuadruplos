@@ -1,0 +1,101 @@
+
+
+h2{
+    justify-content: center;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.div-pila-table{
+    justify-content: left;
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 5%;
+    color: black;
+    display: flex;
+    font-size: 0.6cm;
+}
+
+.pila-box{
+    margin-top: 0.2cm;
+    padding-top: 10px;
+    background-color:rgb(61, 38, 38);
+    margin-left: 1px;
+    margin-right: 1px;
+    width: 2cm;
+    height: 1.2cm;
+
+}
+
+.pila-grande{
+    margin-right: 2%;
+    /*background-color: rgb(255, 255, 255);*/
+    color: white;
+
+}
+   
+.pila-pequeña{
+       margin-left: 2%;
+       /*background-color: rgb(255, 255, 255);*/
+       color: white;
+}
+
+
+.table-triplo{
+    display: flex;
+    /*background-color: darkgray;*/
+    justify-content: right;
+    text-align: right;
+    margin-left: 5%;
+    margin-right: 10%;
+    width: 20cm;
+    height: 8.6cm;
+}
+
+.table-row{
+    /*background-color: white;*/
+    width: 18cm;
+    height: 1;
+    margin: 1% 1% 1% 1%;
+}
+
+.table-box{
+    background-color: rgb(224, 206, 171);
+    margin: 0.5% 0.5% 0.5% 0,5%;
+    margin-left: 34px;
+    width: 4.2cm;
+    height: 1.8cm;
+    text-align: center;
+    margin-top: 0.2cm;
+    padding-top: 25px;
+}
+
+
+#btnEjemplo{
+    margin-top: 25px;
+    width: 10cm;
+    border-radius: 10%;
+    justify-content: center;
+    text-align: center;
+    height: 1cm;
+    margin-left: 36%;
+    background-color: rgba(255, 255, 255, 0.301);
+  
+}
+
+p{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-top: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-top: 0%;
+      width: 100%;
+    }
+  }

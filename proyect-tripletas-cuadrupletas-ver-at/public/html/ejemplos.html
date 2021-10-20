@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos</title>
+
+    <!-- Bootstrap 4 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!--Google style-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@300&display=swap" rel="stylesheet">
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mainEjemplos.css">
+</head>
+
+<body>
+    <!--El navegador, es decir, el nav-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                Tripletas y Cuadrupletas
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-lg-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../html/index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/quienesSomos.html">¿Quiénes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/present.html">Presentación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/ejemplos.html">Ejemplos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/metodos.html">Calcular...</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ANIMACIÓN DE PILA -->
+    <h2>Ejemplo animado Tripleta: A * B + C </h2>
+    <!-- A * B + C -->
+    <div class="div-pila-table">
+        <div class="pila-grande">
+            <div class="pila-box 1">
+                <p> </p>
+            </div>
+            <div class="pila-box 2">
+                <p id="Temp2"> </p>
+            </div>
+            <div class="pila-box 3">
+                <p id="Temp1"> </p>
+            </div>
+            <div class="pila-box 4">
+                <p id="LetraC"> </p>
+            </div>
+            <div class="pila-box 5">
+                <p id="LetraB"> </p>
+            </div>
+            <div class="pila-box 6">
+                <p id="LetraA"> </p>
+            </div>
+
+        </div>
+        <div class="pila-pequeña">
+            <div class="pila-box 1">
+                <p></p>
+            </div>
+            <div class="pila-box 2">
+                <p></p>
+            </div>
+            <div class="pila-box 3">
+                <p></p>
+            </div>
+            <div class="pila-box 4">
+                <p id="Mult"> </p>
+            </div>
+            <div class="pila-box 5">
+                <p id="Sum"> </p>
+            </div>
+            <div class="pila-box 6">
+                <p id="Igual"> </p>
+            </div>
+
+        </div>
+
+        <!--TABLE-->
+
+        <div class="table-triplo">
+            <div class="table-row">
+                <div class="table-box">
+                    <p>Operador</p>
+                </div>
+                <div class="table-box">
+                    <p id="Mult-table"></p>
+                </div>
+                <div class="table-box">
+                    <p id="Sum-table"></p>
+
+                </div>
+                <div class="table-box">
+                    <p id="Igual-table"></p>
+                </div>
+            </div>
+            <div class="table-row 1">
+                <div class="table-box">
+                    <p>Operando 1</p>
+                </div>
+                <div class="table-box">
+                    <p id="A-table"></p>
+                </div>
+                <div class="table-box">
+                    <p id="C-table"></p>
+                </div>
+                <div class="table-box">
+                    <p id=""></p>
+                </div>
+            </div>
+            <div class="table-row 2">
+                <div class="table-box">
+                    <p>Operando 2</p>
+                </div>
+                <div class="table-box">
+                    <p id="B-table"></p>
+                </div>
+                <div class="table-box">
+                    <p id="Temp1-table"></p>
+                </div>
+                <div class="table-box">
+                    <p id="Temp2-table"> </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="button">
+        <input type="button" id="btnEjemplo" value="Click">
+    </div>
+
+
+    <script src="../js/ejemplo.js"></script>
+</body>
+
+</html>
