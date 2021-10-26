@@ -107,8 +107,6 @@ function GetCuadruplos(pilaExpression = [], /*operatorAmount*/) {
 
 
 function MethodArrayOrderCuadruplos(expressionArray = []) {
-    //let score=0;
-    //let expressionArray = [];
     let letter = "";
     let operator = [];
     let newExpression = [];
@@ -169,12 +167,19 @@ function GraphTableCuadruplos(arrayCuadruplo = []) {
 
     for (let i = 0; i < NumFilas; i++) {
         codigoHTML += "<tr>";
+        if(i === 0){
+            codigoHTML += "<td>" + "      ---- Operador ----      " + "</td><!--celda-->";
+            codigoHTML += "<td>" + "      ---- Operando 1 ----      " + "</td><!--celda-->";
+            codigoHTML += "<td>" + "      ---- Operando 2 ----      " + "</td><!--celda-->";
+            codigoHTML += "<td>" + "      ---- Resultado ----      " + "</td><!--celda-->";
+            codigoHTML += "</tr>";
+        }
         for (let j = StarNumColumnas; j < EndNumColumnas; j++) {
             if(expressionArrayCuadruplo[j] === undefined){
                 break;
             }
             else{
-                codigoHTML += "<td>" + "      ---      " + expressionArrayCuadruplo[j] + "      ---      " + "</td><!--celda-->";
+                codigoHTML += "<td>" + "" + expressionArrayCuadruplo[j] + "" + "</td><!--celda-->";
 
             }
         }
@@ -226,5 +231,9 @@ function ConvertCuadruplosArray(cadena) {
 document.getElementById("buttonMethodCuadruplo").onclick = () => {
     cuadruplos = document.getElementById("inputMethod").value;
     console.log(cuadruplos);
+
+    document.getElementById("img").style.display="none";
+
+
     GraphTableCuadruplos(MethodForOrderAnArray(cuadruplos));
 }
