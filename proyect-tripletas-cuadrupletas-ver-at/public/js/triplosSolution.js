@@ -157,6 +157,7 @@ document.getElementById("buttonMethodTriplo").onclick = () => {
     triplos = document.getElementById("inputMethod").value; //obtiene la expresion
     console.log(triplos); //imprimimos en consola la expresion
     
+    //Ocultar la imagen y así aparezca la tabla de triplos
     document.getElementById("img").style.display="none";
     //setTimeout(()=>{    document.getElementById('img').style.display="none";},2000);
 
@@ -238,12 +239,3 @@ function ConvertTriplosArray(cadena) {
 
 
 
-///////////////////////////////////////
-function mostrar()
-{
-    document.getElementById('img').style.display="block";
-}
-function ocultar()
-{
-    document.getElementById('img').style.display="none";
-}
